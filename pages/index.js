@@ -1,3 +1,5 @@
+import Button from "../components/Button/Button";
+
 export default function Home() {
   return (
     <>
@@ -56,9 +58,13 @@ export default function Home() {
             <span className="heading-primary--main">Outdoors</span>
             <span className="heading-primary--sub">is where life happens</span>
           </h1>
-          <a href="#section-tours" className="btn btn--white btn--animated">
-            Discover our tours
-          </a>
+          <Button
+            htmlElement="link"
+            text="Discover our tours"
+            variant="white"
+            animate={true}
+            href="#section-tours"
+          />
         </div>
       </header>
       <main>
@@ -90,10 +96,12 @@ export default function Home() {
                 fuga minus in excepturi atque deserunt ex, qui distinctio
                 asperiores sapiente, dolores velit dolore!
               </p>
-
-              <a href="#" className="btn-text">
-                Learn more &rarr;
-              </a>
+              <Button
+                htmlElement="link"
+                text="Learn more &rarr;"
+                type="text"
+                href="#"
+              />
             </div>
             <div className="col-1-of-2">
               <div className="composition">
@@ -209,9 +217,12 @@ export default function Home() {
                       <p className="card__price-only">Only</p>
                       <p className="card__price-value">$297</p>
                     </div>
-                    <a href="#popup" className="btn btn--white">
-                      Book now!
-                    </a>
+                    <Button
+                      htmlElement="link"
+                      text="Book now!"
+                      variant="white"
+                      href="#popup"
+                    />
                   </div>
                 </div>
               </div>
@@ -242,9 +253,12 @@ export default function Home() {
                       <p className="card__price-only">Only</p>
                       <p className="card__price-value">$497</p>
                     </div>
-                    <a href="#popup" className="btn btn--white">
-                      Book now!
-                    </a>
+                    <Button
+                      htmlElement="link"
+                      text="Book now!"
+                      variant="white"
+                      href="#popup"
+                    />
                   </div>
                 </div>
               </div>
@@ -275,9 +289,12 @@ export default function Home() {
                       <p className="card__price-only">Only</p>
                       <p className="card__price-value">$897</p>
                     </div>
-                    <a href="#popup" className="btn btn--white">
-                      Book now!
-                    </a>
+                    <Button
+                      htmlElement="link"
+                      text="Book now!"
+                      variant="white"
+                      href="#popup"
+                    />
                   </div>
                 </div>
               </div>
@@ -285,9 +302,12 @@ export default function Home() {
           </div>
 
           <div className="u-center-text u-margin-top-huge">
-            <a href="#" className="btn btn--green">
-              Discover all tours
-            </a>
+            <Button
+              htmlElement="link"
+              text="Discover all tours"
+              variant="green"
+              href="#"
+            />
           </div>
         </section>
         <section className="section-stories" id="section-stories">
@@ -360,9 +380,12 @@ export default function Home() {
           </div>
 
           <div className="u-center-text u-margin-top-huge">
-            <a href="#" className="btn btn-text">
-              Read all stories &rarr;
-            </a>
+            <Button
+              htmlElement="link"
+              text="Read all stories &rarr;"
+              type="text"
+              href="#"
+            />
           </div>
         </section>
         <section className="section-book" id="section-book">
@@ -428,9 +451,12 @@ export default function Home() {
                   </div>
 
                   <div className="form_group">
-                    <buttton className="btn btn--green">
-                      Next step &rarr;
-                    </buttton>
+                    <Button
+                      htmlElement="link"
+                      text="Next step &rarr;"
+                      variant="green"
+                      href="#"
+                    />
                   </div>
                 </form>
               </div>
@@ -538,9 +564,12 @@ export default function Home() {
               repellendus nostrum laborum architecto, ut necessitatibus impedit
               natus est aspernatur deserunt soluta!
             </p>
-            <a href="#" className="btn btn--green">
-              Book now
-            </a>
+            <Button
+              htmlElement="link"
+              text="Book now"
+              variant="green"
+              href="#"
+            />
           </div>
         </div>
       </div>
