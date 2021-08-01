@@ -1,0 +1,51 @@
+/* ---------------------------------------------------------- */
+/* --- RESET --- */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    // this defines what 1rem is
+    font-size: 62.5%; // 1 rem = 10px => 10px / 16px = 62.5%
+
+    // ---- TEST ----
+    // @include respond-phone {
+    //     font-size: 50%; //wprowadza ten kontent do media query zawartego w pliku _mixins.scss
+    // }
+    // --- end TEST ---
+
+    @include respond(big-desktop) {
+        font-size: 72%; // 1rem = 12px => 12px / 16px = 72%;
+    }
+
+    @include respond(tab-land) {
+        font-size: 56.25%; // 1rem = 9px => 9px / 16px = 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%; // 1rem = 8px => 8px / 16px = 50%;
+    }
+
+    // @include respond(phone) {
+    //     font-size: 37.5%; // 1rem = 6px => 5px / 16px = 50%;
+    // }
+
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+
+    @include respond(tab-land) {
+        padding: 0;
+    }
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

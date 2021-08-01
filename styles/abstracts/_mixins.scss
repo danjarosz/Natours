@@ -1,0 +1,76 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// --- MEDIA QUERY MANAGER ---
+/*
+0 - 600px:      phone
+600 - 900px:    Tablet portrait mode
+900 - 1200px: Tablet landscape mode
+1200 - 1800px: is where our normal styles apply
+1800px + : Big desktop
+*/
+// --------------- TEST -------------------
+// @mixin respond-phone {
+//     @media (max-width: 600px) {
+//         @content; //pozwala na wprowadzenie dowolnego kontentu
+//     }
+// }
+// ------------------------------------
+
+/*
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px => wynika ze stylów przeglądarki
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint==big-desktop {
+        @media (min-width: 112.5em) {
+            //1800px
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-land {
+        @media (max-width: 75em) {
+            //1200px
+            @content;
+        }
+    }
+
+    @if $breakpoint==tab-port {
+        @media (max-width: 56.25em) {
+            //900px
+            @content;
+        }
+    }
+
+    @if $breakpoint==phone {
+        @media (max-width: 37.5em) {
+            //600px
+            @content;
+        }
+    }
+}
+
+//ORDER OF Writing media queries
+// 1. Base + typography
+// 2. general layout + grid
+// 3. page layout
+// 4. components
