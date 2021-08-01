@@ -20,7 +20,7 @@
         background-image: linear-gradient(to right bottom,
                 rgba($color-primary-light, .8),
                 rgba($color-primary-dark, .8)),
-            url(/images/img/hero.jpg);
+            url(/images/hero.jpg);
     }
 
     @include respond(phone) {
