@@ -1,3 +1,4 @@
+import BackgroundVideo from "../components/BackgroundVideo/BackgroundVideo";
 import Button from "../components/Button/Button";
 
 export default function Home() {
@@ -311,13 +312,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section-stories" id="section-stories">
-          <div className="bg-video">
-            <video className="bg-video__content" autoPlay muted loop>
-              <source src="/images/video.mp4" type="video/mp4" />
-              <source src="/images/video.webm" type="video/webm" />
-              Your broweser is not supported!
-            </video>
-          </div>
+          <BackgroundVideo />
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary ">
               We make people genuiely happy
