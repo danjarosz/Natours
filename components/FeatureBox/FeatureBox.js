@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import clsx from "clsx";
 import classes from "./FeatureBox.module.scss";
+import Typography from "../Typography/Typography";
 
 // icon: "globe" | "compass" | "map" | "heartbeat"
 // headingText: string;
@@ -29,7 +30,9 @@ export default function FeatureBox(props) {
       {iconClass ? (
         <i className={clsx(classes["feature-box__icon"], iconClass)}></i>
       ) : null}
-      <h3 className="heading-tertiary u-margin-bottom-small">{headingText}</h3>
+      <Typography component="h3" variant="tertiary" marginBottom="small">
+        {headingText}
+      </Typography>
       <p className={classes["feature-box__text"]}>{text}</p>
     </div>
   );

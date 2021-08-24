@@ -3,6 +3,7 @@ import Button from "../components/Button/Button";
 import Card from "../components/Card/Card";
 import Composition from "../components/Composition/Composition";
 import FeatureBox from "../components/FeatureBox/FeatureBox";
+import Typography from "../components/Typography/Typography";
 
 export default function Home() {
   return (
@@ -58,10 +59,14 @@ export default function Home() {
           />
         </div>
         <div className="header__text-box">
-          <h1 className="heading-primary">
-            <span className="heading-primary--main">Outdoors</span>
-            <span className="heading-primary--sub">is where life happens</span>
-          </h1>
+          <Typography component="h1" variant="primary">
+            <Typography component="h1" variant="primary" type="main">
+              Outdoors
+            </Typography>
+            <Typography component="h1" variant="primary" type="sub">
+              is where life happens
+            </Typography>
+          </Typography>
           <Button
             htmlElement="link"
             text="Discover our tours"
@@ -74,32 +79,40 @@ export default function Home() {
       <main>
         <section className="section-about" id="section-about">
           <div className="u-center-text">
-            <h2 className="heading-secondary u-margin-bottom-big">
+            <Typography component="h2" variant="secondary" marginBottom="big">
               Exciting tours for adventours people
-            </h2>
+            </Typography>
           </div>
 
           <div className="row">
             <div className="col-1-of-2">
-              <h3 className="heading-tertiary u-margin-bottom-small">
+              <Typography
+                component="h3"
+                variant="tertiary"
+                marginBottom="small"
+              >
                 You're going to fall in love with nature
-              </h3>
-              <p className="paragraph">
+              </Typography>
+              <Typography component="p" variant="paragraph">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit magnam eius nobis quis eaque architecto voluptatem
                 obcaecati! Facere mollitia qui excepturi ipsum eaque? Earum
                 error, alias perferendis pariatur harum sed?
-              </p>
+              </Typography>
 
-              <h3 className="heading-tertiary u-margin-bottom-small">
+              <Typography
+                component="h3"
+                variant="tertiary"
+                marginBottom="small"
+              >
                 Live adventures like you never have before
-              </h3>
-              <p className="paragraph">
+              </Typography>
+              <Typography component="p" variant="paragraph">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Assumenda expedita delectus quas corrupti, fugit eligendi sequi
                 fuga minus in excepturi atque deserunt ex, qui distinctio
                 asperiores sapiente, dolores velit dolore!
-              </p>
+              </Typography>
               <Button
                 htmlElement="link"
                 text="Learn more &rarr;"
@@ -154,7 +167,9 @@ export default function Home() {
 
         <section className="section-tours" id="section-tours">
           <div className="u-center-text u-margin-bottom-big">
-            <h2 className="heading-secondary ">Most popular tours</h2>
+            <Typography component="h2" variant="secondary">
+              Most popular tours
+            </Typography>
           </div>
 
           <div className="row">
@@ -220,9 +235,9 @@ export default function Home() {
         <section className="section-stories" id="section-stories">
           <BackgroundVideo />
           <div className="u-center-text u-margin-bottom-big">
-            <h2 className="heading-secondary ">
+            <Typography component="h2" variant="secondary">
               We make people genuiely happy
-            </h2>
+            </Typography>
           </div>
 
           <div className="row">
@@ -236,10 +251,14 @@ export default function Home() {
                 <figcaption className="story__caption">Marry Smith</figcaption>
               </figure>
               <div className="story__text">
-                <h3 className="headeing-tertiary u-margin-bottom-small">
+                <Typography
+                  component="h3"
+                  variant="tertiary"
+                  marginBottom="small"
+                >
                   I had the best week ever with my family
-                </h3>
-                <p>
+                </Typography>
+                <Typography component="p">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptas nulla cumque molestiae fugit excepturi quod magni
                   inventore vel facilis nobis, error tenetur incidunt odit
@@ -247,7 +266,7 @@ export default function Home() {
                   aliquid mollitia quia nisi a tempore dicta? Eius sapiente
                   officia quod totam provident tenetur natus explicabo
                   laudantium debitis.
-                </p>
+                </Typography>
               </div>
             </div>
           </div>
@@ -263,10 +282,14 @@ export default function Home() {
                 <figcaption className="story__caption">Jack Willson</figcaption>
               </figure>
               <div className="story__text">
-                <h3 className="headeing-tertiary u-margin-bottom-small">
+                <Typography
+                  component="h3"
+                  variant="tertiary"
+                  marginBottom="small"
+                >
                   WOW! My life is completely different now
-                </h3>
-                <p>
+                </Typography>
+                <Typography component="p">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Iusto corrupti nesciunt expedita accusamus quo quam! Sint
                   officia asperiores ratione recusandae alias perspiciatis eaque
@@ -275,7 +298,7 @@ export default function Home() {
                   et maiores soluta, repellendus nam tempora laboriosam
                   voluptate. Maiores eaque suscipit, doloremque aspernatur modi
                   ad adipisci atque saepe!
-                </p>
+                </Typography>
               </div>
             </div>
           </div>
@@ -295,7 +318,9 @@ export default function Home() {
               <div className="book__form">
                 <form action="#" className="form">
                   <div className="u-margin-bottom-medium">
-                    <h2 className="heading-secondary ">Start booking now</h2>
+                    <Typography component="h2" variant="secondary">
+                      Start booking now
+                    </Typography>
                   </div>
 
                   <div className="form__group">
@@ -444,12 +469,12 @@ export default function Home() {
               &times;
             </a>
 
-            <h2 className="heading-secondary u-margin-bottom-small">
+            <Typography component="h2" variant="secondary" marginBottom="small">
               Start booking now
-            </h2>
-            <h3 className="heading-tertiary u-margin-bottom-small">
+            </Typography>
+            <Typography component="h3" variant="tertiary" marginBottom="small">
               Important &ndash; Please read these terms before booking
-            </h3>
+            </Typography>
             <p className="popup__text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
               culpa laborum provident fugit molestias amet, pariatur neque
