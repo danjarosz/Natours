@@ -2,6 +2,7 @@ import BackgroundVideo from "../components/BackgroundVideo/BackgroundVideo";
 import Button from "../components/Button/Button";
 import Card from "../components/Card/Card";
 import Composition from "../components/Composition/Composition";
+import FeatureBox from "../components/FeatureBox/FeatureBox";
 
 export default function Home() {
   return (
@@ -114,58 +115,43 @@ export default function Home() {
         <section className="section-features" id="section-features">
           <div className="row">
             <div className="col-1-of-4">
-              <div className="feature-box">
-                <i className="feature-box__icon fas fa-globe"></i>
-                <h3 className="heading-tertiary u-margin-bottom-small">
-                  Explore the world
-                </h3>
-                <p className="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                  eaque praesentium quibusdam vero consequatur alias incidunt.
-                </p>
-              </div>
+              <FeatureBox
+                icon="globe"
+                headingText="Explore the world"
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  eaque praesentium quibusdam vero consequatur alias incidunt."
+              />
             </div>
 
             <div className="col-1-of-4">
-              <div className="feature-box">
-                <i className="feature-box__icon far fa-compass"></i>
-                <h3 className="heading-tertiary u-margin-bottom-small">
-                  Meet nature
-                </h3>
-                <p className="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                  eaque praesentium quibusdam vero consequatur alias incidunt.
-                </p>
-              </div>
+              <FeatureBox
+                icon="compass"
+                headingText=" Meet nature"
+                text="   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  eaque praesentium quibusdam vero consequatur alias incidunt."
+              />
             </div>
 
             <div className="col-1-of-4">
-              <div className="feature-box">
-                <i className="feature-box__icon far fa-map"></i>
-                <h3 className="heading-tertiary u-margin-bottom-small">
-                  Find your way
-                </h3>
-                <p className="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                  eaque praesentium quibusdam vero consequatur alias incidunt.
-                </p>
-              </div>
+              <FeatureBox
+                icon="map"
+                headingText="Find your way"
+                text="   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  eaque praesentium quibusdam vero consequatur alias incidunt."
+              />
             </div>
 
             <div className="col-1-of-4">
-              <div className="feature-box">
-                <i className="feature-box__icon fas fa-heartbeat"></i>
-                <h3 className="heading-tertiary u-margin-bottom-small">
-                  Live a healthier life
-                </h3>
-                <p className="feature-box__text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-                  eaque praesentium quibusdam vero consequatur alias incidunt.
-                </p>
-              </div>
+              <FeatureBox
+                icon="heartbeat"
+                headingText="Live a healthier life"
+                text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
+                  eaque praesentium quibusdam vero consequatur alias incidunt."
+              />
             </div>
           </div>
         </section>
+
         <section className="section-tours" id="section-tours">
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary ">Most popular tours</h2>
