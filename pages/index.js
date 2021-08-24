@@ -1,6 +1,7 @@
 import BackgroundVideo from "../components/BackgroundVideo/BackgroundVideo";
 import Button from "../components/Button/Button";
 import Card from "../components/Card/Card";
+import Composition from "../components/Composition/Composition";
 
 export default function Home() {
   return (
@@ -106,29 +107,7 @@ export default function Home() {
               />
             </div>
             <div className="col-1-of-2">
-              <div className="composition">
-                <img
-                  srcSet="/images/nat-1.jpg 300w, /images/nat-1-large.jpg 1000w"
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                  alt="Photo 1"
-                  className="composition__photo composition__photo--p1"
-                  src="/images/nat-1-large.jpg"
-                />
-                <img
-                  srcSet="/images/nat-2.jpg 300w, /images/nat-2-large.jpg 1000w"
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                  alt="Photo 2"
-                  className="composition__photo composition__photo--p2"
-                  src="/images/nat-2-large.jpg"
-                />
-                <img
-                  srcSet="/images/nat-3.jpg 300w, /images/nat-3-large.jpg 1000w"
-                  sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                  alt="Photo 3"
-                  className="composition__photo composition__photo--p3"
-                  src="/images/nat-3-large.jpg"
-                />
-              </div>
+              <Composition />
             </div>
           </div>
         </section>
