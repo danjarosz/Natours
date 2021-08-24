@@ -4,6 +4,7 @@ import Card from "../components/Card/Card";
 import Composition from "../components/Composition/Composition";
 import FeatureBox from "../components/FeatureBox/FeatureBox";
 import Typography from "../components/Typography/Typography";
+import Grid from "../components/Grid/Grid";
 
 export default function Home() {
   return (
@@ -84,8 +85,8 @@ export default function Home() {
             </Typography>
           </div>
 
-          <div className="row">
-            <div className="col-1-of-2">
+          <Grid element="row">
+            <Grid element="column" elementNumber={1} numberOfColumns={2}>
               <Typography
                 component="h3"
                 variant="tertiary"
@@ -119,50 +120,51 @@ export default function Home() {
                 type="text"
                 href="#"
               />
-            </div>
-            <div className="col-1-of-2">
+            </Grid>
+
+            <Grid element="column" elementNumber={1} numberOfColumns={2}>
               <Composition />
-            </div>
-          </div>
+            </Grid>
+          </Grid>
         </section>
         <section className="section-features" id="section-features">
-          <div className="row">
-            <div className="col-1-of-4">
+          <Grid element="row">
+            <Grid element="column" elementNumber={1} numberOfColumns={4}>
               <FeatureBox
                 icon="globe"
                 headingText="Explore the world"
                 text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                   eaque praesentium quibusdam vero consequatur alias incidunt."
               />
-            </div>
+            </Grid>
 
-            <div className="col-1-of-4">
+            <Grid element="column" elementNumber={1} numberOfColumns={4}>
               <FeatureBox
                 icon="compass"
                 headingText=" Meet nature"
                 text="   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                   eaque praesentium quibusdam vero consequatur alias incidunt."
               />
-            </div>
+            </Grid>
 
-            <div className="col-1-of-4">
+            <Grid element="column" elementNumber={1} numberOfColumns={4}>
               <FeatureBox
                 icon="map"
                 headingText="Find your way"
                 text="   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                   eaque praesentium quibusdam vero consequatur alias incidunt."
               />
-            </div>
+            </Grid>
 
-            <div className="col-1-of-4">
+            <Grid element="column" elementNumber={1} numberOfColumns={4}>
               <FeatureBox
                 icon="heartbeat"
                 headingText="Live a healthier life"
                 text=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
                   eaque praesentium quibusdam vero consequatur alias incidunt."
               />
-            </div>
-          </div>
+            </Grid>
+          </Grid>
         </section>
 
         <section className="section-tours" id="section-tours">
@@ -172,8 +174,8 @@ export default function Home() {
             </Typography>
           </div>
 
-          <div className="row">
-            <div className="col-1-of-3">
+          <Grid element="row">
+            <Grid element="column" elementNumber={1} numberOfColumns={3}>
               <Card
                 headingText="the sea explorer"
                 detailItems={[
@@ -188,8 +190,8 @@ export default function Home() {
                 buttonText="book now!"
                 variant={1}
               />
-            </div>
-            <div className="col-1-of-3">
+            </Grid>
+            <Grid element="column" elementNumber={1} numberOfColumns={3}>
               <Card
                 headingText="the forest hiker"
                 detailItems={[
@@ -204,8 +206,8 @@ export default function Home() {
                 buttonText="book now!"
                 variant={2}
               />
-            </div>
-            <div className="col-1-of-3">
+            </Grid>
+            <Grid element="column" elementNumber={1} numberOfColumns={3}>
               <Card
                 headingText="the snow adventurer"
                 detailItems={[
@@ -220,8 +222,8 @@ export default function Home() {
                 buttonText="book now!"
                 variant={3}
               />
-            </div>
-          </div>
+            </Grid>
+          </Grid>
 
           <div className="u-center-text u-margin-top-huge">
             <Button
@@ -240,7 +242,7 @@ export default function Home() {
             </Typography>
           </div>
 
-          <div className="row">
+          <Grid element="row">
             <div className="story">
               <figure className="story__shape">
                 <img
@@ -269,9 +271,9 @@ export default function Home() {
                 </Typography>
               </div>
             </div>
-          </div>
+          </Grid>
 
-          <div className="row">
+          <Grid element="row">
             <div className="story">
               <figure className="story__shape">
                 <img
@@ -301,7 +303,7 @@ export default function Home() {
                 </Typography>
               </div>
             </div>
-          </div>
+          </Grid>
 
           <div className="u-center-text u-margin-top-huge">
             <Button
@@ -313,7 +315,7 @@ export default function Home() {
           </div>
         </section>
         <section className="section-book" id="section-book">
-          <div className="row">
+          <Grid element="row">
             <div className="book">
               <div className="book__form">
                 <form action="#" className="form">
@@ -387,7 +389,7 @@ export default function Home() {
                 </form>
               </div>
             </div>
-          </div>
+          </Grid>
         </section>
       </main>
       <footer className="footer">
@@ -399,8 +401,8 @@ export default function Home() {
           />
         </div>
 
-        <div className="row">
-          <div className="col-1-of-2">
+        <Grid element="row">
+          <Grid element="column" elementNumber={1} numberOfColumns={2}>
             <div className="footer__navigation">
               <ul className="footer__list">
                 <li className="footer__item">
@@ -430,8 +432,8 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="col-1-of-2">
+          </Grid>
+          <Grid element="column" elementNumber={1} numberOfColumns={2}>
             <p className="footer__copyright">
               Built by{" "}
               <a href="#" className="footer__link">
@@ -446,8 +448,8 @@ export default function Home() {
               claim it as your own design. A credit to the original author,
               Jonas Schmedtmann, is of course highly appreciated!
             </p>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
       </footer>
 
       <div className="popup" id="popup">
