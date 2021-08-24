@@ -1,5 +1,6 @@
 import BackgroundVideo from "../components/BackgroundVideo/BackgroundVideo";
 import Button from "../components/Button/Button";
+import Card from "../components/Card/Card";
 
 export default function Home() {
   return (
@@ -193,112 +194,52 @@ export default function Home() {
 
           <div className="row">
             <div className="col-1-of-3">
-              <div className="card">
-                <div className="card__side card__side--front">
-                  <div className="card__picture card__picture--1">&nbsp;</div>
-                  <h4 className="card__heading">
-                    <span className="card__heading-span card__heading-span--1">
-                      the sea explorer
-                    </span>
-                  </h4>
-
-                  <div className="card__details">
-                    <ul>
-                      <li>3 day tour</li>
-                      <li>Up to 30 people</li>
-                      <li>2 tour guides</li>
-                      <li>Sleep in cosy hotels</li>
-                      <li>Difficulty: easy</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="card__side card__side--back card__side--back-1">
-                  <div className="card__cta">
-                    <div className="card__price-box">
-                      <p className="card__price-only">Only</p>
-                      <p className="card__price-value">$297</p>
-                    </div>
-                    <Button
-                      htmlElement="link"
-                      text="Book now!"
-                      variant="white"
-                      href="#popup"
-                    />
-                  </div>
-                </div>
-              </div>
+              <Card
+                headingText="the sea explorer"
+                detailItems={[
+                  "3 day tour",
+                  "Up to 30 people",
+                  "2 tour guides",
+                  "Sleep in cosy hotels",
+                  "Difficulty: easy",
+                ]}
+                textAbovePrice="Only"
+                price="$297"
+                buttonText="book now!"
+                variant={1}
+              />
             </div>
             <div className="col-1-of-3">
-              <div className="card">
-                <div className="card__side card__side--front">
-                  <div className="card__picture card__picture--2">&nbsp;</div>
-                  <h4 className="card__heading">
-                    <span className="card__heading-span card__heading-span--2">
-                      the forest hiker
-                    </span>
-                  </h4>
-
-                  <div className="card__details">
-                    <ul>
-                      <li>7 day tour</li>
-                      <li>Up to 40 people</li>
-                      <li>6 tour guides</li>
-                      <li>Sleep in provided tents</li>
-                      <li>Difficulty: medium</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="card__side card__side--back card__side--back-2">
-                  <div className="card__cta">
-                    <div className="card__price-box">
-                      <p className="card__price-only">Only</p>
-                      <p className="card__price-value">$497</p>
-                    </div>
-                    <Button
-                      htmlElement="link"
-                      text="Book now!"
-                      variant="white"
-                      href="#popup"
-                    />
-                  </div>
-                </div>
-              </div>
+              <Card
+                headingText="the forest hiker"
+                detailItems={[
+                  "7 day tour",
+                  "Up to 40 people",
+                  "6 tour guides",
+                  "Sleep in provided tents",
+                  "Difficulty: medium",
+                ]}
+                textAbovePrice="Only"
+                price="$497"
+                buttonText="book now!"
+                variant={2}
+              />
             </div>
             <div className="col-1-of-3">
-              <div className="card">
-                <div className="card__side card__side--front">
-                  <div className="card__picture card__picture--3">&nbsp;</div>
-                  <h4 className="card__heading">
-                    <span className="card__heading-span card__heading-span--3">
-                      the snow adventurer
-                    </span>
-                  </h4>
-
-                  <div className="card__details">
-                    <ul>
-                      <li>5 day tour</li>
-                      <li>Up to 15 people</li>
-                      <li>3 tour guides</li>
-                      <li>Sleep in provided tents</li>
-                      <li>Difficulty: hard</li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="card__side card__side--back card__side--back-3">
-                  <div className="card__cta">
-                    <div className="card__price-box">
-                      <p className="card__price-only">Only</p>
-                      <p className="card__price-value">$897</p>
-                    </div>
-                    <Button
-                      htmlElement="link"
-                      text="Book now!"
-                      variant="white"
-                      href="#popup"
-                    />
-                  </div>
-                </div>
-              </div>
+              <Card
+                headingText="the snow adventurer"
+                detailItems={[
+                  "5 day tour",
+                  "Up to 15 people",
+                  "3 tour guides",
+                  "Sleep in provided tents",
+                  "Difficulty: hard",
+                ]}
+                textAbovePrice="Only"
+                price="$897"
+                buttonText="book now!"
+                variant={3}
+              />
             </div>
           </div>
 
