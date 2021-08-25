@@ -6,6 +6,7 @@ import FeatureBox from "../components/FeatureBox/FeatureBox";
 import Typography from "../components/Typography/Typography";
 import Grid from "../components/Grid/Grid";
 import Form from "../components/Form/Form";
+import Popup from "../components/Popup/Popup";
 
 export default function Home() {
   return (
@@ -385,55 +386,7 @@ export default function Home() {
         </Grid>
       </footer>
 
-      <div className="popup" id="popup">
-        <div className="popup__content">
-          <div className="popup__left">
-            <img
-              src="/images/nat-8.jpg"
-              alt="tour photo"
-              className="popup__img"
-            />
-            <img
-              src="/images/nat-9.jpg"
-              alt="tour photo"
-              className="popup__img"
-            />
-          </div>
-          <div className="popup__right">
-            <a href="#section-tours" className="popup__close">
-              &times;
-            </a>
-
-            <Typography component="h2" variant="secondary" marginBottom="small">
-              Start booking now
-            </Typography>
-            <Typography component="h3" variant="tertiary" marginBottom="small">
-              Important &ndash; Please read these terms before booking
-            </Typography>
-            <p className="popup__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-              culpa laborum provident fugit molestias amet, pariatur neque
-              fugiat minima autem mollitia, veritatis nemo repudiandae possimus
-              veniam ullam corporis dignissimos? Quidem vero totam, ex
-              voluptatibus minima numquam repellat ratione assumenda nemo, hic
-              rerum optio tempora consectetur molestiae veritatis repudiandae
-              est nesciunt nulla nihil, ullam harum. Nulla cumque distinctio
-              ratione qui accusantium vero consequuntur quisquam pariatur
-              voluptas laudantium ex iste voluptates, facilis quis maxime quasi
-              dolore beatae aspernatur molestiae repudiandae eos totam
-              dignissimos. Dolorum magni, quibusdam ipsam animi reiciendis, esse
-              repellendus nostrum laborum architecto, ut necessitatibus impedit
-              natus est aspernatur deserunt soluta!
-            </p>
-            <Button
-              htmlElement="link"
-              text="Book now"
-              variant="green"
-              href="#"
-            />
-          </div>
-        </div>
-      </div>
+      <Popup />
     </>
   );
 }
