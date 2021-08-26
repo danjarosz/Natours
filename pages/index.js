@@ -7,6 +7,7 @@ import Typography from "../components/Typography/Typography";
 import Grid from "../components/Grid/Grid";
 import Form from "../components/Form/Form";
 import Popup from "../components/Popup/Popup";
+import Story from "../components/Story/Story";
 
 export default function Home() {
   return (
@@ -245,66 +246,39 @@ export default function Home() {
           </div>
 
           <Grid element="row">
-            <div className="story">
-              <figure className="story__shape">
-                <img
-                  src="/images/nat-8.jpg"
-                  alt="person on a tour"
-                  className="story__img"
-                />
-                <figcaption className="story__caption">Marry Smith</figcaption>
-              </figure>
-              <div className="story__text">
-                <Typography
-                  component="h3"
-                  variant="tertiary"
-                  marginBottom="small"
-                >
-                  I had the best week ever with my family
-                </Typography>
-                <Typography component="p">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Voluptas nulla cumque molestiae fugit excepturi quod magni
-                  inventore vel facilis nobis, error tenetur incidunt odit
-                  similique dolor ratione officia laudantium sed aspernatur? Cum
-                  aliquid mollitia quia nisi a tempore dicta? Eius sapiente
-                  officia quod totam provident tenetur natus explicabo
-                  laudantium debitis.
-                </Typography>
-              </div>
-            </div>
+            <Story
+              imageData={{
+                src: "/images/nat-8.jpg",
+                alt: "person on a tour",
+              }}
+              userName="Marry Smith"
+              title="I had the best week ever with my family"
+              text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas
+              nulla cumque molestiae fugit excepturi quod magni inventore vel
+              facilis nobis, error tenetur incidunt odit similique dolor ratione
+              officia laudantium sed aspernatur? Cum aliquid mollitia quia nisi a
+              tempore dicta? Eius sapiente officia quod totam provident tenetur
+              natus explicabo laudantium debitis."
+            />
           </Grid>
 
           <Grid element="row">
-            <div className="story">
-              <figure className="story__shape">
-                <img
-                  src="/images/nat-9.jpg"
-                  alt="person on a tour"
-                  className="story__img"
-                />
-                <figcaption className="story__caption">Jack Willson</figcaption>
-              </figure>
-              <div className="story__text">
-                <Typography
-                  component="h3"
-                  variant="tertiary"
-                  marginBottom="small"
-                >
-                  WOW! My life is completely different now
-                </Typography>
-                <Typography component="p">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Iusto corrupti nesciunt expedita accusamus quo quam! Sint
-                  officia asperiores ratione recusandae alias perspiciatis eaque
-                  unde libero accusamus, nemo, odio fuga sit et. Eos blanditiis
-                  quasi labore est quo? Minima incidunt corrupti aliquid saepe,
-                  et maiores soluta, repellendus nam tempora laboriosam
-                  voluptate. Maiores eaque suscipit, doloremque aspernatur modi
-                  ad adipisci atque saepe!
-                </Typography>
-              </div>
-            </div>
+            <Story
+              imageData={{
+                src: "/images/nat-9.jpg",
+                alt: "person on a tour",
+              }}
+              userName="Jack Willson"
+              title="WOW! My life is completely different now"
+              text="Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Iusto corrupti nesciunt expedita accusamus quo quam! Sint
+              officia asperiores ratione recusandae alias perspiciatis eaque
+              unde libero accusamus, nemo, odio fuga sit et. Eos blanditiis
+              quasi labore est quo? Minima incidunt corrupti aliquid saepe,
+              et maiores soluta, repellendus nam tempora laboriosam
+              voluptate. Maiores eaque suscipit, doloremque aspernatur modi
+              ad adipisci atque saepe!"
+            />
           </Grid>
 
           <div className="u-center-text u-margin-top-huge">
