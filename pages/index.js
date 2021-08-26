@@ -8,6 +8,7 @@ import Grid from "../components/Grid/Grid";
 import Form from "../components/Form/Form";
 import Popup from "../components/Popup/Popup";
 import Story from "../components/Story/Story";
+import Footer from "../components/Footer/Footer";
 
 export default function Home() {
   return (
@@ -300,65 +301,8 @@ export default function Home() {
           </Grid>
         </section>
       </main>
-      <footer className="footer">
-        <div className="footer__logo-box">
-          <img
-            src="/images/logo-green-2x.png"
-            alt="Full logo"
-            className="footer__logo"
-          />
-        </div>
 
-        <Grid element="row">
-          <Grid element="column" elementNumber={1} numberOfColumns={2}>
-            <div className="footer__navigation">
-              <ul className="footer__list">
-                <li className="footer__item">
-                  <a href="#" className="footer__link">
-                    Company
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="#" className="footer__link">
-                    Contact us
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="#" className="footer__link">
-                    Carrers
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="#" className="footer__link">
-                    Privacy policy
-                  </a>
-                </li>
-                <li className="footer__item">
-                  <a href="#" className="footer__link">
-                    Terms
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </Grid>
-          <Grid element="column" elementNumber={1} numberOfColumns={2}>
-            <p className="footer__copyright">
-              Built by{" "}
-              <a href="#" className="footer__link">
-                Jonas Schmedtman
-              </a>{" "}
-              for his online course{" "}
-              <a href="#" className="footer__link">
-                Advanced CSS and Sass
-              </a>
-              . Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to
-              use this webside for both personal and commercial use, but not to
-              claim it as your own design. A credit to the original author,
-              Jonas Schmedtmann, is of course highly appreciated!
-            </p>
-          </Grid>
-        </Grid>
-      </footer>
+      <Footer />
 
       <Popup />
     </>
