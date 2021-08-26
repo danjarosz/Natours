@@ -1,0 +1,54 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+
+/* ---------------------------------------------------------- */
+/* --- HEADER --- */
+.header {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,
+          rgba($color-primary-light, .8),
+          rgba($color-primary-dark, .8)),
+      url(/images/hero-small.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  /* clip-path umożliwia określene obszaru wyświetlania elementu */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* clip-path: polygon(0 0, 100% 50%, 100% 50%, 0 100%) */
+
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-width: 125em) {
+      background-image: linear-gradient(to right bottom,
+              rgba($color-primary-light, .8),
+              rgba($color-primary-dark, .8)),
+          url(/images/hero.jpg);
+  }
+
+  @include respond(phone) {
+      clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
+
+  /* logo */
+  &__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+  }
+
+  &__logo {
+      height: 3.5rem;
+  }
+
+  /* heading */
+  &__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      /* dla wyśwrodkowania buttona */
+      text-align: center;
+  }
+}

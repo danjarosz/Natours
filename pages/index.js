@@ -9,6 +9,7 @@ import Form from "../components/Form/Form";
 import Popup from "../components/Popup/Popup";
 import Story from "../components/Story/Story";
 import Footer from "../components/Footer/Footer";
+import Header from "../components/Header/Header";
 
 export default function Home() {
   return (
@@ -55,32 +56,7 @@ export default function Home() {
           </ul>
         </nav>
       </div>
-      <header className="header">
-        <div className="header__logo-box">
-          <img
-            src="/images/logo-white.png"
-            alt="Natours logo"
-            className="header__logo"
-          />
-        </div>
-        <div className="header__text-box">
-          <Typography component="h1" variant="primary">
-            <Typography component="h1" variant="primary" type="main">
-              Outdoors
-            </Typography>
-            <Typography component="h1" variant="primary" type="sub">
-              is where life happens
-            </Typography>
-          </Typography>
-          <Button
-            htmlElement="link"
-            text="Discover our tours"
-            variant="white"
-            animate={true}
-            href="#section-tours"
-          />
-        </div>
-      </header>
+      <Header />
       <main>
         <section className="section-about" id="section-about">
           <div className="u-center-text">
@@ -301,9 +277,7 @@ export default function Home() {
           </Grid>
         </section>
       </main>
-
       <Footer />
-
       <Popup />
     </>
   );
