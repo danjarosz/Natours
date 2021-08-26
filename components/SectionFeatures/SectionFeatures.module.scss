@@ -1,0 +1,22 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom,
+          rgba($color-primary-light, .8),
+          rgba($color-primary-dark, .8)),
+      url(/images/nat-4.jpg);
+  background-size: cover;
+  margin-top: -10rem;
+
+  transform: skewY(-7deg); //Skrzywienie sekcji, efekt podobny do tego z headera
+
+  &>* {
+      transform: skewY(7deg); // Wypoziomowuje elementy wewnątrz sekcji
+  }
+
+  @include respond(tab-port) {
+      padding: 15rem 0;
+  }
+}

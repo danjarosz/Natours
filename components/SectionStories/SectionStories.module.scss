@@ -1,0 +1,12 @@
+@import "../../styles/abstracts/variables";
+@import "../../styles/abstracts/mixins";
+
+.section-stories {
+  position: relative;
+  background-color: transparent;
+  padding: 15rem 0;
+
+  @include respond(tab-port) {
+      padding: 10rem 0;
+  }
+}
